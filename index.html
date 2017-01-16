@@ -1,18 +1,357 @@
+<!-- <!DOCTYPE html> -->
 <html>
-    <head>
-        <title>Aria</title>
-        <script src="https://use.fontawesome.com/117683b487.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lobster|Rock+Salt" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="name">
-            <h1 class="title">Aria Malkani</h1>
-            <a class="github" href="https://github.com/CodeBrew28"> <i class="fa fa-2x fa-align-center fa-github" aria-hidden="true"></i> </a>
-            <a class="facebook" href="https://www.facebook.com/aria.malkani"><i class="fa fa-2x fa-align-center fa-facebook-square"aria-hidden="true"></i> </a>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon"  href="assets/images/favicon.ico?" />
+    <title>Aria Malkani | Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body> 
+    
+    <style>
 
-        </div>
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#FBECD9;
+  color: #FBECD9;
+  margin: 0;
+  font: 1em/1.5 ;
+  font-family: 'EB Garamond', serif;
+   text-align: center;
+}
+ul li  p {
+   color: black;
+   font-family: 'EB Garamond', serif;
+   font-size: 1.25em;
+
+ }
+
+h1 {
+    text-transform: uppercase;
+}
+
+
+.name {
+    background-color: black;
+    opacity: 0.6;
+}
+
+h1,h2 {  
+    
+  font-size: 5.625rem; 
+  color: rgba(255, 255, 255, 1);
+  font-weight: normal;
+  line-height: 1.3;
+  text-shadow: 5px 8px 10px #222;
+  margin:12px 0 0;
+  font-family: 'EB Garamond', serif;
+     
+}
+
+h2 {
+  font-size: 3.3125em; 
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 .5em; 
+}
+
+h3 {
+  font-size: 2.25em; 
+  color: #3d454d;
+  line-height: 1.2;
+  /*margin-top: 30px;
+  padding-top:  50px;
+  padding-bottom: 0px;*/
+
+}
+
+
+
+
+.main-header {
+  padding-top: 170px;
+  height: 500px;
+  background: linear-gradient(#FBECD9, transparent 0%),
+              linear-gradient(0deg,#FBECD9 5%,transparent),
+              darkblue url(coffee_stock.jpg) no-repeat center;  
+  
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  font-size: 1.625rem; 
+  text-shadow: 5px 10px 10px #222;
+  letter-spacing:.065em;
+  font-weight:200;
+  border-bottom:2px solid;
+  /*padding-bottom:10px;*/
+}
+
+
+.arrow {
+  width: 50px;
+  margin-top:50px;
+  max-width: 100px;
+  width: 100%;
+}
+
+
+
+ul li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0px 0px;
+    /*padding-top: 50px;*/
+    padding-bottom: 0px;
+}
+
+
+
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 420px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	text-align: center;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.grid figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid figure figcaption > a {
+	opacity: 0;
+}
+
+.grid figure p {
+	letter-spacing: 2px;
+	font-size: 65%;
+}
+
+figure.effect-ming {
+	background: #030c17;
+}
+
+figure.effect-ming figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 2px solid #fff;
+	content: '';
+	opacity: 0;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-ming h2 {
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-ming p {
+	padding: 1em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-ming:hover h2 {
+	transform: scale(0.9);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover p {
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-ming:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-ming:hover img {
+	opacity: 0.4;
+}
+
+
+
+.button {
+  margin: .4em;
+  padding: 1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.link_my:hover{
+  background-color: #3ff;
+  border-bottom :2px solid;
+}
+
+ .header-interests {
+   padding-top: 50px;
+ }
+
+
+/* NAVIGATION */
+
+
+    </style>
+    
+    
+    
+    
+    <header id="top" class="main-header">
+      <h1 class="name">Aria Malkani</h1>
+      <h2 class="name">Coffee-powered Developer</h2> 
+     <img class="arrow" src="arrow_down.png" alt="Down arrow">
+    </header>
+
+
+ <h3 class="header-interests"> Interests </h3>
+    
+    <ul>
+        <li> 
+            <div class="skill">
+            
+            <img class="arrow" src="data_mining.png" alt="data mining">
+    <p> Data Mining </p>
+		</div>
+        </li>
+        <li> 
+            <div class="skill">
+            <img class="arrow" src="machine.png" alt="machine learning">
+            <p> Machine Learning </p>
+		</div>
+        </li>
+        <li> 
+            <div class="skill">
+            <img class="arrow" src="stack.png" alt="machine learning">
+            <p> Full Stack Development </p>
+		</div>
+        </li>
+        <li> 
+            <div class="skill">
+            <img class="arrow" src="security.png" alt="data mining">
+            <p> CyberSecurity </p>
+		</div>
+        </li>
+        <li> 
+            <div class="skill">
+            <img class="arrow" src="algo.png" alt="data mining">
+             <p> Algorithms </p>
+		</div>
+        </li>
         
-    </body>
+    <ul>
+
+    
+    
+    
+    <h3 class="header-interests"> Projects </h3>
+    
+<div class="content">
+							
+				<div class="grid">
+					
+          <figure class="effect-ming">
+						<img src="https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg" alt="img09"/>
+						<figcaption>
+							<h2>minion</span></h2>
+							<p>An adorable creature</p>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+					
+          <figure class="effect-ming">
+						<img src="https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg" alt="img09"/>
+						<figcaption>
+							<h2>minion</span></h2>
+							<p>An adorable creature</p>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+          
+          
+          <figure class="effect-ming">
+						<img src="https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg" alt="img09"/>
+						<figcaption>
+							<h2>minion</span></h2>
+							<p>An adorable creature</p>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+
+        <figure class="effect-ming">
+						<img src="https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg" alt="img09"/>
+						<figcaption>
+							<h2>minion</span></h2>
+							<p>An adorable creature</p>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+
+        <figure class="effect-ming">
+						<img src="https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg" alt="img09"/>
+						<figcaption>
+							<h2>minion</span></h2>
+							<p>An adorable creature</p>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+    
+
+         <figure class="effect-ming">
+						<img src="https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg" alt="img09"/>
+						<figcaption>
+							<h2>minion</span></h2>
+							<p>An adorable creature</p>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+				</div>
+				
+			</div>
+    
+    
+		</div>
+	</section>
+
+
+
+</div>
+
+
+
+  </body>
+
+
 </html>
